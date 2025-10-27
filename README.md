@@ -10,4 +10,4 @@ Solutions were made using [TexMacs](https://www.texmacs.org/), saved as `.tm` fi
 
 ## Contact me
 
- For any errors in the solutions, please contact me by the email in my profile, I'll surely reply!
+For any errors in the solutions, please contact me by the email in my profile, I'll surely reply!

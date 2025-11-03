@@ -257,7 +257,7 @@
       For <math|\<forall\>\<varepsilon\>\<gtr\>0>,
       <math|\<exists\>N\<in\><with|font|Bbb|Z><rsup|+>> such that
       <math|\<forall\>k\<geqslant\>N,<big|sum><rsub|j=k><rsup|+\<infty\>><frac|1|2<rsup|j>>=<frac|1|2<rsup|k-1>>\<less\>\<varepsilon\>>.
-      </indent>
+    </indent>
   </problem>
 
   <\problem>
@@ -297,7 +297,10 @@
     \;
 
     <\indent>
-      \;
+      From the problem we know <math|f,g> is continuous almost everywhere on
+      <math|<around*|[|a,b|]>>, therefore it's easy to see that <math|f*g> is
+      continuous almost everywhere on <math|<around*|[|a,b|]>>, indicating
+      its Riemann integrability.
     </indent>
   </problem>
 
@@ -305,8 +308,39 @@
     \;
 
     <\indent>
-      \;
+      Whether <math|f> is bounded or not, we let <math|E> be the set where
+      <math|f> is continuous. Therefore <math|m<around*|(|<around*|[|a,b|]>\\E|)>=0>
+      and <math|f> is measurable on it. Also, <math|f> is measurable on
+      <math|E> since it's continuous.<htab|5mm><qed>
     </indent>
+  </problem>
+
+  <\problem>
+    \;
+
+    <\enumerate-roman>
+      <item>Let <math|f<around*|(|x|)>=<frac|1|x>*sin<around*|(|<frac|1|x>|)>>.
+      Since <math|<big|int><rsub|0><rsup|1><around*|\||f<around*|(|x|)>|\|>*\<mathd\>x\<rightarrow\>+\<infty\>>,
+      we know <math|f> is not Lebesuge integrable. However, let
+      <math|u=<frac|1|x>> and we can see
+
+      <\equation*>
+        I<rsub|n>=<big|int><rsub|<frac|1|n>><rsup|1><frac|1|x>*sin<around*|(|<frac|1|x>|)>*\<mathd\>x=<big|int><rsub|1><rsup|n><frac|sin<around*|(|u|)>|u>*\<mathd\>u\<longrightarrow\><big|int><rsub|1><rsup|+\<infty\>><frac|sin<around*|(|u|)>|u>*\<mathd\>u\<less\><big|int><rsub|0><rsup|+\<infty\>><frac|sin<around*|(|u|)>|u>*\<mathd\>u=<frac|\<pi\>|2>
+      </equation*>
+
+      so <math|I<rsub|n>> converge.
+
+      <item>No. Because
+
+      <\equation*>
+        lim<rsub|n\<rightarrow\>+\<infty\>><big|int><rsub|<frac|1|n>><rsup|1>f<around*|(|x|)>*\<mathd\>x=<big|int><rsub|0><rsup|1>f<around*|(|x|)>*\<mathd\>x=<big|int><rsub|0><rsup|1><around*|\||f<around*|(|x|)>|\|>*\<mathd\>x
+      </equation*>
+
+      And since <math|<around*|{|<big|int><rsub|<frac|1|n>><rsup|1>f<around*|(|x|)>*\<mathd\>x|}>>
+      converge, we know <math|<big|int><rsub|0><rsup|1><around*|\||f<around*|(|x|)>|\|>*\<mathd\>x>
+      is finite, so <math|f> is Lebesgue integrable in
+      <math|<around*|[|0,1|]>>.
+    </enumerate-roman>
   </problem>
 </body>
 
@@ -323,7 +357,7 @@
     <associate|auto-1|<tuple|?|1>>
     <associate|auto-2|<tuple|?|1>>
     <associate|auto-3|<tuple|1|1>>
-    <associate|auto-4|<tuple|2|1>>
+    <associate|auto-4|<tuple|2|3>>
   </collection>
 </references>
 

@@ -590,7 +590,7 @@
     <strong|42>
 
     <\indent>
-      Counterexample: Let <math|f<rsub|n><around*|(|x|)>=<with|font|cal|X><rsub|<around*|[|0,<frac|1|n>|]>>-<with|font|cal|X><rsub|<around*|[|1-<frac|1|n>,1|]>>>.
+      Counterexample: Let <math|f<rsub|n><around*|(|x|)>=n*<around*|(|<with|font|cal|X><rsub|<around*|[|0,<frac|1|n>|]>>-<with|font|cal|X><rsub|<around*|[|1-<frac|1|n>,1|]>>|)>>.
     </indent>
   </problem*>
 
@@ -729,7 +729,7 @@
       function and we can see
 
       <\equation*>
-        <big|int><rsub|E>f*g*\<mathd\>m\<leqslant\>M*<big|int><rsub|E>f*\<mathd\>m\<less\>\<infty\>
+        <big|int><rsub|E><around*|\||f*g|\|>*\<mathd\>m\<leqslant\>M*<big|int><rsub|E><around*|\||f|\|>*\<mathd\>m\<less\>\<infty\>
       </equation*>
 
       So <math|f*g> is integrable.<htab|5mm><qed>

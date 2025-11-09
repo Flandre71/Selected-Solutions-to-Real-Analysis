@@ -129,17 +129,33 @@
   <\problem>
     \;
 
-    <\indent>
-      \;
-    </indent>
+    <\enumerate-roman>
+      <item>Without loss of generality we assume
+      <math|I=<around*|(|-r,r|)>,J=<around*|(|a,b|)>>. Since
+      <math|I\<cap\>J\<neq\>\<emptyset\>,a\<less\>r\<less\>b<infix-or>a\<less\>-r\<less\>b>.
+      Also from <math|\<ell\><around*|(|I|)>\<gtr\>\<gamma\>*\<ell\><around*|(|J|)>>
+      we know <math|<around*|(|b-a|)>\<less\><frac|2|\<gamma\>>*r\<less\>4*r>.
+      So <math|b\<less\>a+4*r\<less\>5*r,a\<less\>b-4*r\<less\>-5*r>, which
+      means <math|J\<subseteq\>5\<ast\>I>.
+
+      <item>No. When <math|0\<less\>\<gamma\>\<less\><frac|1|2>>, we can have
+      <math|<around*|(|b-a|)>\<gtr\>4*r>. Therefore we choose <math|a> to be
+      sufficiently close to <math|r> <around*|(|or choose <math|b> be
+      sufficiently close to <math|-r>|)>. As a consequence,
+      <math|b\<gtr\>5*r> (or <math|a\<less\>-5*r>), indicating
+      <math|J\<nsubseteq\>5\<ast\>J>.
+    </enumerate-roman>
   </problem>
 
   <\problem>
     \;
 
-    <\indent>
-      \;
-    </indent>
+    <\enumerate-roman>
+      <item><math|\<Leftarrow\>:>When there exist such countable collection
+      <math|<with|font|cal|F>=<around*|{|I<rsub|k>|}><rsub|k=1><rsup|+\<infty\>>>
+      that covers <math|E>, <math|<with|font|cal|F>> covers <math|E> in the
+      sense of Vitali.\ 
+    </enumerate-roman>
   </problem>
 
   <\problem>
@@ -217,6 +233,7 @@
 
 <\initial>
   <\collection>
+    <associate|info-flag|detailed>
     <associate|page-medium|paper>
   </collection>
 </initial>

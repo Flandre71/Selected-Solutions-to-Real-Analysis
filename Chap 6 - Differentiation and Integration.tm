@@ -148,13 +148,50 @@
   </problem>
 
   <\problem>
+    <verbatim|<with|color|red|UNFINISHED>>
+
+    <\enumerate-roman>
+      <item><math|\<Leftarrow\>:>When there exist such countable collection,
+      use Borel-Cantelli Lemma to obtain the proof.
+
+      <item><math|\<Rightarrow\>:>When <math|m<around*|(|E|)>=0>. By the
+      definition of outer-measure, <math|inf<around*|{|<big|sum><rsub|k=1><rsup|+\<infty\>>\<ell\><around*|(|I<rsub|k>|)>\<mid\>E\<subseteq\><big|cup><rsub|k=1><rsup|+\<infty\>>I<rsub|k>|}>=0>.
+      So there exist a sequence of open interal sequences
+      <math|<around*|{|<around*|{|I<rsub|k><rsup|n>|}><rsub|k=1><rsup|+\<infty\>>|}><rsub|n=1><rsup|+\<infty\>>>
+      such that <math|<big|sum><rsub|k=1><rsup|+\<infty\>>\<ell\><around*|(|I<rsub|k><rsup|n>|)>\<leqslant\><frac|1|2<rsup|n>>>.
+      Now
+
+      <\equation*>
+        <big|sum><rsub|n=1><rsup|+\<infty\>><big|sum><rsub|k=1><rsup|+\<infty\>>\<ell\><around*|(|I<rsub|k><rsup|n>|)>\<leqslant\><big|sum><rsub|n=1><rsup|+\<infty\>><frac|1|2<rsup|n>>=1\<less\>+\<infty\>
+      </equation*>
+
+      Every points in <math|E> belongs to infinitely many of
+      <math|<around*|{|I<rsub|k><rsup|n>|}><rsub|k=1><rsup|+\<infty\>>>.
+      Since <math|<around*|{|<around*|{|I<rsub|k><rsup|n>|}><rsub|k=1><rsup|+\<infty\>>|}><rsub|n=1><rsup|+\<infty\>>>
+      consists of countable many of countable open intervals, it's
+      countable.<htab|5mm><qed>
+    </enumerate-roman>
+  </problem>
+
+  <\problem>
     \;
 
     <\enumerate-roman>
-      <item><math|\<Leftarrow\>:>When there exist such countable collection
-      <math|<with|font|cal|F>=<around*|{|I<rsub|k>|}><rsub|k=1><rsup|+\<infty\>>>
-      that covers <math|E>, <math|<with|font|cal|F>> covers <math|E> in the
-      sense of Vitali.\ 
+      <item><math|\<forall\>x<rsub|1>\<less\>x<rsub|2>,<around*|(|c<rsub|k>,d<rsub|k>|)>\<cap\><around*|(|-\<infty\>,x<rsub|1>|)>\<subseteq\><around*|(|c<rsub|k>,d<rsub|k>|)>\<cap\><around*|(|-\<infty\>,x<rsub|2>|)>>,
+      so <math|f> is increasing.
+
+      <item>Without loss of generality, for <math|x\<in\>E> we assume
+      <math|x\<in\><around*|{|<around*|(|c<rsub|k>,d<rsub|k>|)>|}><rsub|k=1><rsup|+\<infty\>>>
+      and prove <math|f> is not differentiable at <math|x>:
+      <math|\<forall\>N\<in\><with|font|Bbb|Z><rsup|+>,\<exists\>\<varepsilon\>\<in\><with|font|Bbb|R><rsup|+>,s.t.\<forall\>k\<in\><around*|[|1,N|]>\<cap\><with|font|Bbb|Z>,<around*|(|x,x+\<varepsilon\>|)>\<subseteq\><around*|(|c<rsub|k>,d<rsub|k>|)>>.
+      Now
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|<frac|f<around*|(|x+\<varepsilon\>|)>-f<around*|(|x|)>|\<varepsilon\>>>|<cell|=>|<cell|<frac|<big|sum><rsub|k=1><rsup|+\<infty\>>\<ell\><around*|(|<around*|(|c<rsub|k>,d<rsub|k>|)>\<cap\><around*|(|x,x+\<varepsilon\>|)>|)>|\<varepsilon\>>>>|<row|<cell|>|<cell|\<geqslant\>>|<cell|<frac|<big|sum><rsub|k=1><rsup|N>\<ell\><around*|(|<around*|(|c<rsub|k>,d<rsub|k>|)>\<cap\><around*|(|x,x+\<varepsilon\>|)>|)>|\<varepsilon\>>>>|<row|<cell|>|<cell|=>|<cell|<frac|<big|sum><rsub|k=1><rsup|N>\<ell\><around*|(|<around*|(|x,x+\<varepsilon\>|)>|)>|\<varepsilon\>>>>|<row|<cell|>|<cell|=>|<cell|N>>>>
+      </eqnarray*>
+
+      Let <math|N\<rightarrow\>+\<infty\>> and we can see <math|f> is not
+      differentiable at <math|x>.<htab|5mm><qed>
     </enumerate-roman>
   </problem>
 
@@ -170,15 +207,11 @@
     \;
 
     <\indent>
-      \;
-    </indent>
-  </problem>
+      It's trivial that
 
-  <\problem>
-    \;
-
-    <\indent>
-      \;
+      <\equation*>
+        <choice|<tformat|<table|<row|<cell|<wide|D|\<bar\>><with|font|cal|X><rsub|<with|font|Bbb|Q>><around*|(|x|)>=+\<infty\>>>|<row|<cell|<underline|D><with|font|cal|X><rsub|<with|font|Bbb|Q>><around*|(|x|)>=-\<infty\>>>>>>
+      </equation*>
     </indent>
   </problem>
 

@@ -353,7 +353,25 @@
     \;
 
     <\indent>
-      \;
+      We'll prove the monotone case directly: A monotone function <math|f> on
+      <math|I=<around*|[|u,v|]>> is continuous almost everywhere on <math|I>.
+      Suppose <math|f> is not continuous on a zero-measrue set
+      <math|E<rsub|0>>, We'll prove <math|f> is continuous on
+      <math|I\\E<rsub|0>>.
+
+      For <math|\<forall\>a\<in\><with|font|Bbb|R>>, let
+
+      <\equation*>
+        s<rsub|a>=sup<around*|{|s\<in\>I\\E<rsub|0>\<mid\>f<around*|(|s|)>\<leqslant\>a|}>
+      </equation*>
+
+      We can have
+
+      <\equation*>
+        <around*|{|x\<mid\>f<around*|(|x|)>\<less\>a|}>=<around*|(|u,s<rsub|a>|)>
+      </equation*>
+
+      Which is a measurable set.
     </indent>
   </problem>
 
@@ -369,7 +387,13 @@
     \;
 
     <\indent>
-      \;
+      Trivial.
+
+      Since <math|f<around*|(|x|)>=<choice|<tformat|<table|<row|<cell|x<rsup|2>*sin<around*|(|<frac|1|x<rsup|2>>|)>x\<in\><around*|(|0,1|]>>>|<row|<cell|0,x=0>>>>>,f<rprime|'><around*|(|x|)>=<choice|<tformat|<table|<row|<cell|2x*sin<around*|(|<frac|1|x<rsup|2>>|)>-<frac|2|x>*cos<around*|(|<frac|1|x<rsup|2>>|)>,x\<in\><around*|(|0,1|]>>>|<row|<cell|0,x=0>>>>>>.
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|<big|int><rsub|0><rsup|1><around*|\||f<rprime|'><around*|(|x|)>|\|>*\<mathd\>m>|<cell|=>|<cell|<big|int><rsub|0><rsup|1><around*|\||2x*sin<around*|(|<frac|1|x<rsup|2>>|)>-<frac|2|x>*cos<around*|(|<frac|1|x<rsup|2>>|)>|\|>*\<mathd\>m>>|<row|<cell|>|<cell|=>|<cell|<big|int><rsub|0><rsup|1><frac|2|x>*<around*|\||x<rsup|2>*sin<around*|(|<frac|1|x<rsup|2>>|)>-cos<around*|(|<frac|1|x<rsup|2>>|)>|\|>*\<mathd\>m>>|<row|<cell|>|<cell|>|<cell|>>>>
+      </eqnarray*>
     </indent>
   </problem>
 

@@ -219,6 +219,180 @@
     \;
 
     <\indent>
+      By Vitali's Covering Lemma, there's a countable disjoint subcollection
+      <math|<around*|{|I<rsub|k>|}><rsub|k=1><rsup|+\<infty\>>> of
+      <math|<with|font|cal|F>> together with
+      <math|E<rsub|0>\<subseteq\>E,m<around*|(|E<rsub|0>|)>=0> for which
+
+      <\equation*>
+        E=E<rsub|0>\<cup\><big|cup><rsub|k=1><rsup|+\<infty\>><around*|(|E\<cap\>I<rsub|k>|)>
+      </equation*>
+
+      Therefore
+
+      <\equation*>
+        0\<leqslant\>m<rsup|\<ast\>><around*|(|E\\<big|cup><rsub|k=1><rsup|+\<infty\>>I<rsub|k>|)>\<leqslant\>m<around*|(|E<rsub|0>|)>=0
+      </equation*>
+
+      <htab|5mm><qed>
+    </indent>
+  </problem>
+
+  <\problem>
+    \;
+
+    <\indent>
+      Denote such union by <math|<with|font|cal|F><rsub|0>=<around*|{|I|}>>
+      where <math|I> is closed, bounded, non-degenerated intervals. Let
+      <math|E=<big|cup>I> and <math|<with|font|cal|F>=<around*|{|<around*|[|a,b|]>\<mid\>I\<in\><with|font|cal|F><rsub|0>,<around*|[|a,b|]>\<subseteq\>I|}>>.
+      Now we can see <math|<with|font|cal|F>> covers <math|E> in the sense of
+      Vitali. Therefore by Vitali Covering lemma, there exist
+      <math|E<rsub|0>\<subseteq\>E,m<around*|(|E<rsub|0>|)>=0> and a
+      countable disjoint subcollection <math|<around*|{|I<rsub|k>|}><rsub|k=1><rsup|+\<infty\>>>
+      of <math|<with|font|cal|F>> such that
+
+      <\equation*>
+        E=E<rsub|0>\<cup\><big|cup><rsub|k=1><rsup|+\<infty\>>I<rsub|k>
+      </equation*>
+
+      Now for any set <math|S>,
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|m<rsup|*\<ast\>><around*|(|S\\E|)>+m<rsup|\<ast\>><around*|(|S\<cap\>E|)>>|<cell|=>|<cell|m<rsup|\<ast\>><around*|(|S\\<around*|(|E<rsub|0>\<cup\><big|cup><rsub|k=1><rsup|+\<infty\>>I<rsub|k>|)>|)>+m<rsup|\<ast\>><around*|(|S\<cap\><around*|(|E<rsub|0>\<cup\><big|cup><rsub|k=1><rsup|+\<infty\>>I<rsub|k>|)>|)>>>|<row|<cell|>|<cell|=>|<cell|m<rsup|\<ast\>><around*|(|<around*|(|S\\E<rsub|0>|)>\<cap\><around*|(|S\\<big|cup><rsub|k=1><rsup|+\<infty\>>I<rsub|k>|)>|)>+m<rsup|\<ast\>><around*|(|<around*|(|S\<cap\>E<rsub|0>|)>\<cup\><around*|(|S\<cap\><big|cup><rsub|k=1><rsup|+\<infty\>>I<rsub|k>|)>|)>>>|<row|<cell|>|<cell|\<leqslant\>>|<cell|m<rsup|\<ast\>><around*|(|S\\<big|cup><rsub|k=1><rsup|+\<infty\>>I<rsub|k>|)>+m<rsup|\<ast\>><around*|(|S\<cap\>E<rsub|0>|)>+m<rsup|\<ast\>><around*|(|S\<cap\><big|cup><rsub|k=1><rsup|+\<infty\>>I<rsub|k>|)>>>|<row|<cell|>|<cell|=>|<cell|m<rsup|\<ast\>><around*|(|S\\<big|cup><rsub|k=1><rsup|+\<infty\>>I<rsub|k>|)>+m<rsup|\<ast\>><around*|(|S\<cap\><big|cup><rsub|k=1><rsup|+\<infty\>>I<rsub|k>|)>>>|<row|<cell|>|<cell|=>|<cell|m<rsup|\<ast\>><around*|(|S|)>+m<rsup|\<ast\>><around*|(|S\<cap\>E<rsub|0>|)>>>>>
+      </eqnarray*>
+
+      So <math|E> is measurable.<htab|5mm><qed>
+    </indent>
+  </problem>
+
+  <\problem>
+    \;
+
+    <\indent>
+      For <math|\<varepsilon\>\<in\><with|font|Bbb|R>>,
+
+      <\equation*>
+        <frac|f<around*|(|0|)>-f<around*|(|\<varepsilon\>|)>|0-\<varepsilon\>>=sin<around*|(|<frac|1|\<varepsilon\>>|)>
+      </equation*>
+
+      So we can see
+
+      <\equation*>
+        <choice|<tformat|<table|<row|<cell|<wide|D|\<bar\>>f<around*|(|0|)>=1>>|<row|<cell|<underline|D>f<around*|(|0|)>=-1>>>>>
+      </equation*>
+    </indent>
+  </problem>
+
+  <\problem>
+    \ 
+
+    <\indent>
+      When <math|g> is non-negetive or non-positive, <math|f> is monotone and
+      therefore differentiable almost everywhere on <math|<around*|(|a,b|)>>.
+
+      In the general case, just sort out the positive and negative part of
+      <math|g>, namely <math|g<rsub|+>> and <math|g<rsub|->>, and obtain the
+      functions, <math|f<rsub|+>> and <math|f<rsub|->> respectively, which is
+      differnetiable almost everywhere on <math|<around*|(|a,b|)>>. Because
+      the union of two zero-measure sets has measure zero, we obtain
+      <math|f=f<rsub|+>+f<rsub|->> differentiable almost everywhere on
+      <math|<around*|(|a,b|)>>.
+    </indent>
+  </problem>
+
+  <\problem>
+    \;
+
+    <\indent>
+      \;
+    </indent>
+  </problem>
+
+  <\problem>
+    \;
+
+    <\indent>
+      \;
+    </indent>
+  </problem>
+
+  <\problem>
+    <verbatim|<with|color|red|Errata potentially needed, skipped
+    temporarily.>>
+
+    <\indent>
+      We prove this y contradictory: Assume <math|f> is not increasing on
+      <math|<around*|[|a,b|]>>, let <math|c=sup<around*|{|u\<in\><around*|[|a,b|]>\<mid\>f
+      is increasing on <around*|[|a,u|]>|}>>. Now we consider
+      <math|<wide|D|\<bar\>>f<around*|(|c|)>>: by the definition of <math|c>,
+      there exist a decreasing sequence <math|<around*|{|x<rsub|k>|}><rsub|k=1><rsup|+\<infty\>>>,
+      <math|x<rsub|k>\<gtr\>c> for any <math|x<rsub|k>>,
+      <math|lim<rsub|k\<rightarrow\>+\<infty\>>x<rsub|k>=c>, such that
+      <math|f<around*|(|c|)>\<gtr\>f<around*|(|x<rsub|k>|)>> for any
+      <math|x<rsub|k>>
+    </indent>
+  </problem>
+
+  <\problem>
+    \;
+
+    <\indent>
+      \;
+    </indent>
+  </problem>
+
+  <\problem>
+    \;
+
+    <\indent>
+      \;
+    </indent>
+  </problem>
+
+  <\problem>
+    \;
+
+    <\indent>
+      \;
+    </indent>
+  </problem>
+
+  <\problem>
+    \;
+
+    <\indent>
+      \;
+    </indent>
+  </problem>
+
+  <\problem>
+    \;
+
+    <\indent>
+      \;
+    </indent>
+  </problem>
+
+  <\problem>
+    \;
+
+    <\indent>
+      \;
+    </indent>
+  </problem>
+
+  <\problem>
+    \;
+
+    <\indent>
+      \;
+    </indent>
+  </problem>
+
+  <\problem>
+    \;
+
+    <\indent>
       \;
     </indent>
   </problem>

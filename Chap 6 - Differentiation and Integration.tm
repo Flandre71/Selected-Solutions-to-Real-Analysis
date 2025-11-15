@@ -947,6 +947,232 @@
       <htab|5mm><qed>
     </enumerate-roman>
   </problem>
+
+  <\problem>
+    \;
+
+    <\indent>
+      If <math|\<varphi\>> is absolutely continuous on
+      <math|<around*|[|0,1|]>>, it will be differentiable and
+      <math|\<varphi\><rprime|'><around*|(|x|)>=0> almost everywhere, which
+      contradicts with the fact that
+
+      <\equation*>
+        <big|int><rsub|0><rsup|1>\<varphi\><rprime|'>*\<mathd\>m=\<varphi\><around*|(|1|)>-\<varphi\><around*|(|0|)>=1
+      </equation*>
+
+      <htab|5mm><qed>
+    </indent>
+  </problem>
+
+  <\problem>
+    \;
+
+    <\indent>
+      Since <math|f> is differentiable almost everywhere on
+      <math|<around*|[|a,b|]>>, for almost all <math|x> in
+      <math|<around*|[|a,b|]>> we have
+
+      <\equation*>
+        lim<rsub|n\<rightarrow\>+\<infty\>>Diff<rsub|<frac|1|n>>f=f<rprime|'>
+      </equation*>
+
+      So
+
+      <\equation*>
+        <big|int><rsub|a><rsup|b>lim<rsub|n\<rightarrow\>+\<infty\>>Diff<rsub|<frac|1|n>>f*\<mathd\>m=<big|int><rsub|a><rsup|b>f<rprime|'>*\<mathd\>m
+      </equation*>
+
+      On the other hand, since <math|f> is continuous on
+      <math|<around*|[|a,b|]>>, by using <math|\<varepsilon\>-\<delta\>>
+      language it's easy to prove that
+
+      <\equation*>
+        lim<rsub|n\<rightarrow\>+\<infty\>>n*<big|int><rsub|a><rsup|a+<frac|1|n>>f*\<mathd\>m=f<around*|(|a|)>,lim<rsub|n\<rightarrow\>+\<infty\>>n*<big|int><rsub|b><rsup|b+<frac|1|n>>f*\<mathd\>m=f<around*|(|b|)>
+      </equation*>
+
+      And we can see
+
+      <\equation*>
+        lim<rsub|n\<rightarrow\>+\<infty\>><big|int><rsub|a><rsup|b>Diff<rsub|<frac|1|n>>f*\<mathd\>m=lim<rsub|n\<rightarrow\>+\<infty\>><around*|(|n*<big|int><rsub|b><rsup|b+<frac|1|n>>f*\<mathd\>m-n*<big|int><rsub|a><rsup|a+<frac|1|n>>f*\<mathd\>m|)>=f<around*|(|b|)>-f<around*|(|a|)>
+      </equation*>
+
+      Therefore
+
+      <\equation*>
+        <big|int><rsub|a><rsup|b>f<rprime|'>*\<mathd\>m=f<around*|(|b|)>-f<around*|(|a|)>\<Longleftrightarrow\><big|int><rsub|a><rsup|b>lim<rsub|n\<rightarrow\>+\<infty\>>Diff<rsub|<frac|1|n>>f*\<mathd\>m=lim<rsub|n\<rightarrow\>+\<infty\>><big|int><rsub|a><rsup|b>Diff<rsub|<frac|1|n>>f*\<mathd\>m
+      </equation*>
+
+      <htab|5mm><qed>
+    </indent>
+  </problem>
+
+  <\problem>
+    \;
+
+    <\indent>
+      We know
+
+      <\equation*>
+        <big|int><rsub|a><rsup|b>Diff<rsub|<frac|1|n>>f*\<mathd\>m=n*<big|int><rsub|b><rsup|b+<frac|1|n>>f*\<mathd\>m-n*<big|int><rsub|a><rsup|a+<frac|1|n>>f*\<mathd\>m
+      </equation*>
+
+      By <em|Vitali Convergence Theorem>,
+
+      <\equation*>
+        lim<rsub|n\<rightarrow\>+\<infty\>><big|int><rsub|a><rsup|b>Diff<rsub|<frac|1|n>>f*\<mathd\>m=lim<rsub|n\<rightarrow\>+\<infty\>><around*|(|n*<big|int><rsub|b><rsup|b+<frac|1|n>>f*\<mathd\>m-n*<big|int><rsub|a><rsup|a+<frac|1|n>>f*\<mathd\>m|)>
+      </equation*>
+
+      Since <math|f> is continuous, the above equation is equivalent to
+
+      <\equation*>
+        <big|int><rsub|a><rsup|b>f<rprime|'>*\<mathd\>m=f<around*|(|b|)>-f<around*|(|a|)>
+      </equation*>
+
+      <htab|5mm><qed>
+    </indent>
+  </problem>
+
+  <\problem>
+    \;
+
+    <\indent>
+      The proof is literally the same as <strong|Problem 50.>, just replace
+      <em|Vitali Convergence Theorem> into <em|Dominated Convergence
+      Theorem>.
+    </indent>
+  </problem>
+
+  <\problem>
+    \;
+
+    <\indent>
+      Since <math|f,g> is absolutely continuous on closed interval, we have
+      <math|f*g> absolutely continuous. Therefore
+
+      <\equation*>
+        <big|int><rsub|a><rsup|b><around*|(|f*g|)><rprime|'>*\<mathd\>m=f<around*|(|b|)>*g<around*|(|b|)>-f<around*|(|a|)>*g<around*|(|a|)>
+      </equation*>
+
+      Which is to say
+
+      <\equation*>
+        <big|int><rsub|a><rsup|b>f*g<rprime|'>*\<mathd\>m+<big|int><rsub|a><rsup|b>f<rprime|'>*g*\<mathd\>m=f<around*|(|b|)>*g<around*|(|b|)>-f<around*|(|a|)>*g<around*|(|a|)>
+      </equation*>
+
+      <htab|5mm><qed>
+    </indent>
+  </problem>
+
+  <\problem>
+    \;
+
+    <\enumerate-roman>
+      <item>When <math|f> is Lipschitz on <math|<around*|[|a,b|]>>, the
+      result is trivial.
+
+      <item>When <math|\<exists\>c\<in\><with|font|Bbb|R><rsup|+>,s.t.
+      <around*|\||f<rprime|'>|\|>\<less\>c> almost everywhere on
+      <math|<around*|[|a,b|]>>: For <math|\<forall\>u,v\<in\><around*|[|a,b|]>,u\<less\>v>,
+      since <math|f> is absolutely continuous, we can use the first version
+      of the Fundamental Theorem of Calculus for the Lebesgue integral and
+      obtain
+
+      <\equation*>
+        <around*|\||f<around*|(|v|)>-f<around*|(|u|)>|\|>=<around*|\||<big|int><rsub|u><rsup|v>f<rprime|'>*\<mathd\>m|\|>\<leqslant\><big|int><rsub|u><rsup|v><around*|\||f<rprime|'>|\|>*\<mathd\>m\<less\>c*<around*|(|v-u|)>
+      </equation*>
+
+      <htab|5mm><qed>
+    </enumerate-roman>
+  </problem>
+
+  <\problem>
+    \;
+
+    <\enumerate-roman>
+      <item>
+    </enumerate-roman>
+  </problem>
+
+  <\problem>
+    \;
+
+    <\indent>
+      \;
+    </indent>
+  </problem>
+
+  <\problem>
+    \;
+
+    <\indent>
+      \;
+    </indent>
+  </problem>
+
+  <\problem>
+    \;
+
+    <\indent>
+      \;
+    </indent>
+  </problem>
+
+  <\problem>
+    \;
+
+    <\indent>
+      \;
+    </indent>
+  </problem>
+
+  <\problem>
+    \;
+
+    <\indent>
+      \;
+    </indent>
+  </problem>
+
+  <\problem>
+    \;
+
+    <\indent>
+      \;
+    </indent>
+  </problem>
+
+  <\problem>
+    \;
+
+    <\indent>
+      \;
+    </indent>
+  </problem>
+
+  <\problem>
+    \;
+
+    <\indent>
+      \;
+    </indent>
+  </problem>
+
+  <\problem>
+    \;
+
+    <\indent>
+      \;
+    </indent>
+  </problem>
+
+  <\problem>
+    \;
+
+    <\indent>
+      \;
+    </indent>
+  </problem>
 </body>
 
 <\initial>

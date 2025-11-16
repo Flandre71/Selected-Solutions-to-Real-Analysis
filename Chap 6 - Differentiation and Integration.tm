@@ -965,6 +965,8 @@
     </indent>
   </problem>
 
+  <section|Section 6.5>
+
   <\problem>
     \;
 
@@ -1090,7 +1092,18 @@
     \;
 
     <\enumerate-roman>
-      <item>
+      <item><verbatim|Failed>
+
+      <item>Suppose <math|f> is not singular, so the subset <math|E> of
+      <math|<around*|[|a,b|]>> on which <math|f<rprime|'>> does not vanish
+      has positive measure. Let <math|\<delta\>\<less\>m<around*|(|E|)>>.
+      Since <math|<big|sum><rsub|k=1><rsup|n><around*|(|b<rsub|k>-a<rsub|k>|)>\<less\>\<delta\>\<less\>m<around*|(|E|)>>,
+      <math|<big|cup><rsub|k=1><rsup|n><around*|(|b<rsub|k>,a<rsub|k>|)>\<cap\>E\<subsetneqq\>E>.
+      Therefore
+
+      <\equation*>
+        <big|sum><rsub|k=1><rsup|n><around*|(|f<around*|(|b<rsub|k>|)>-f<around*|(|a<rsub|k>|)>|)>\<less\>
+      </equation*>
     </enumerate-roman>
   </problem>
 
@@ -1142,11 +1155,119 @@
     </indent>
   </problem>
 
+  <section|Section 6.6>
+
+  <\problem>
+    \;
+
+    <\enumerate-roman>
+      <item>When <math|\<varphi\><around*|(|<big|sum><rsub|k=1><rsup|n>\<lambda\><rsub|k>*x<rsub|k>|)>\<leqslant\><big|sum><rsub|k=1><rsup|n>\<lambda\><rsub|k>*\<varphi\><around*|(|x<rsub|k>|)>>,
+      let <math|\<lambda\><rsub|3>=\<cdots\>=\<lambda\><rsub|n>=0> and we can
+      see <math|\<varphi\>> is convex.
+
+      <item>When <math|\<varphi\>> is convex,
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|\<varphi\><around*|(|<big|sum><rsub|k=1><rsup|n>\<lambda\><rsub|k>*x<rsub|k>|)>>|<cell|=>|<cell|\<varphi\><around*|(|\<lambda\><rsub|1>*x<rsub|1>+<big|sum><rsub|k=2><rsup|n>\<lambda\><rsub|k>*x<rsub|k>|)>>>|<row|<cell|>|<cell|\<leqslant\>>|<cell|\<lambda\><rsub|1>*\<varphi\><around*|(|x<rsub|1>|)>+\<varphi\><around*|(|<big|sum><rsub|k=2><rsup|n>\<lambda\><rsub|k>*x<rsub|k>|)>>>|<row|<cell|>|<cell|\<vdots\>>|<cell|>>|<row|<cell|>|<cell|\<leqslant\>>|<cell|<big|sum><rsub|k=1><rsup|n>\<lambda\><rsub|k>*\<varphi\><around*|(|x<rsub|k>|)>>>>>
+      </eqnarray*>
+
+      <item>Suppose <math|f=<big|sum><rsub|k=1><rsup|n>c<rsub|k>*<with|font|cal|X><rsub|E<rsub|k>>>
+      where <math|<around*|{|E<rsub|k>|}><rsub|k=1><rsup|n>> is a measurable
+      partition of <math|<around*|[|0,1|]>>,
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|\<varphi\><around*|(|<big|int><rsub|0><rsup|1>f<around*|(|x|)>*\<mathd\>x|)>>|<cell|=>|<cell|\<varphi\><around*|(|<big|sum><rsub|k=1><rsup|n>c<rsub|k>*m<around*|(|E<rsub|k>|)>|)>>>|<row|<cell|>|<cell|\<leqslant\>>|<cell|<big|sum><rsub|k=1><rsup|n>m<around*|(|E<rsub|k>|)>*\<varphi\><around*|(|c<rsub|k>|)>>>|<row|<cell|>|<cell|=>|<cell|<big|int><rsub|0><rsup|1><around*|(|\<varphi\>\<circ\>f|)><around*|(|x|)>\<mathd\>x>>>>
+      </eqnarray*>
+
+      <htab|5mm><qed>
+    </enumerate-roman>
+  </problem>
+
+  <\problem>
+    \;
+
+    <\enumerate-roman>
+      <item>When <math|\<varphi\>> is convex, take <math|\<lambda\>> in the
+      definition of convexity to be <math|<frac|1|2>> and we can obtain the
+      required inequality. Also, the continuity of <math|\<varphi\>> is
+      derived from convexity automatically.
+
+      <item>On the other hand: For <math|\<forall\><around*|[|a<rsub|0>,b<rsub|0>|]>\<subseteq\><around*|(|a,b|)>>,
+      we have
+
+      <\equation*>
+        <stack|<tformat|<table|<row|<cell|\<varphi\><around*|(|<frac|1|2>*a<rsub|0>+<frac|1|2>*b<rsub|0>|)>\<leqslant\><frac|1|2>*\<varphi\><around*|(|a<rsub|0>|)>+<frac|1|2>*\<varphi\><around*|(|b<rsub|0>|)>>>|<row|<cell|\<varphi\><around*|(|<frac|1|4>*a<rsub|0>+<frac|3|4>*b<rsub|0>|)>\<leqslant\><frac|1|2>*\<varphi\><around*|(|<frac|1|2>*a<rsub|0>+<frac|1|2>*b<rsub|0>|)>+<frac|1|2>*\<varphi\><around*|(|b<rsub|0>|)>\<leqslant\><frac|1|4>*\<varphi\><around*|(|a<rsub|0>|)>+<frac|3|4>*\<varphi\><around*|(|b<rsub|0>|)>>>|<row|<cell|\<varphi\><around*|(|<frac|3|4>*a<rsub|0>+<frac|1|4>*b<rsub|0>|)>\<leqslant\><frac|1|2>*\<varphi\><around*|(|a<rsub|0>|)>+<frac|1|2>*\<varphi\><around*|(|<frac|1|2>*a<rsub|0>+<frac|1|2>*b<rsub|0>|)>\<leqslant\><frac|3|4>*\<varphi\><around*|(|a<rsub|0>|)>+<frac|1|4>*\<varphi\><around*|(|b<rsub|0>|)>>>|<row|<cell|\<vdots\>>>>>>
+      </equation*>
+
+      Let <math|D<around*|[|a<rsub|0>,b<rsub|0>|]>=<around*|{|x\<mid\>x=<frac|k|2<rsup|s>>*a<rsub|0>+<around*|(|1-<frac|k|2<rsup|s>>|)>*b<rsub|0>,s\<in\><with|font|Bbb|Z><rsup|+>\<cap\><around*|{|0|}>,k\<in\><around*|[|0,2<rsup|s>|]>\<cap\><with|font|Bbb|Z>|}>\<subseteq\><around*|[|a<rsub|0>,b<rsub|0>|]>>.
+      We can see that <math|\<varphi\>> is convex in
+      <math|D<around*|[|a<rsub|0>,b<rsub|0>|]>>. Since
+      <math|D<around*|[|a<rsub|0>,b<rsub|0>|]>> is dense in
+      <math|<around*|[|a<rsub|0>,b<rsub|0>|]>>, we obtain <math|\<varphi\>>'s
+      convexity in <math|<around*|[|a<rsub|0>,b<rsub|0>|]>>. Ultimately, let
+      <math|a<rsub|0>\<rightarrow\>a,b<rsub|0>\<rightarrow\>b> and we can see
+      <math|\<varphi\>> is convex in <math|<around*|(|a,b|)>>.
+    </enumerate-roman>
+  </problem>
+
   <\problem>
     \;
 
     <\indent>
       \;
+    </indent>
+  </problem>
+
+  <\problem>
+    \;
+
+    <\enumerate-roman>
+      <item>For <math|\<forall\>x<rsub|1>,x<rsub|2>\<in\><around*|(|a,b|)>,\<forall\>\<lambda\>\<in\><around*|[|0,1|]>>,
+      (without loss of generality we assume
+      <math|x<rsub|1>\<less\>x<rsub|2>>) notice
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|\<varphi\><around*|(|\<lambda\>*x<rsub|1>+<around*|(|1-\<lambda\>|)>*x<rsub|2>|)>>|<cell|\<leqslant\>>|<cell|\<lambda\>*\<varphi\><around*|(|x<rsub|1>|)>+<around*|(|1-\<lambda\>|)>*\<varphi\><around*|(|x<rsub|2>|)>>>|<row|<cell|\<Leftrightarrow\><htab|5mm>\<lambda\>*<around*|(|\<varphi\><around*|(|\<lambda\>*x<rsub|1>+<around*|(|1-\<lambda\>|)>*x<rsub|2>|)>-\<varphi\><around*|(|x<rsub|1>|)>|)>>|<cell|\<leqslant\>>|<cell|<around*|(|1-\<lambda\>|)>*<around*|(|\<varphi\><around*|(|x<rsub|2>|)>-\<varphi\><around*|(|\<lambda\>*x<rsub|1>+<around*|(|1-\<lambda\>|)>*x<rsub|2>|)>|)><htab|5mm><around*|(|\<ast\>|)>>>>>
+      </eqnarray*>
+
+      By Lagrange's Mean Value Theorem, <math|\<exists\>u\<in\><around*|(|x<rsub|1>,\<lambda\>*x<rsub|1>+<around*|(|1-\<lambda\>|)>*x<rsub|2>|)>,v\<in\><around*|(|\<lambda\>*x<rsub|1>+<around*|(|1-\<lambda\>|)>*x<rsub|2>,x<rsub|2>|)>>
+      such that
+
+      <\equation*>
+        <stack|<tformat|<table|<row|<cell|\<varphi\><around*|(|\<lambda\>*x<rsub|1>+<around*|(|1-\<lambda\>|)>*x<rsub|2>|)>-\<varphi\><around*|(|x<rsub|1>|)>=\<varphi\><rprime|'><around*|(|u|)>*<around*|(|\<lambda\>*x<rsub|1>+<around*|(|1-\<lambda\>|)>*x<rsub|2>-x<rsub|1>|)>=\<varphi\><rprime|'><around*|(|u|)>*<around*|(|1-\<lambda\>|)>*<around*|(|x<rsub|2>-x<rsub|1>|)>>>|<row|<cell|\<varphi\><around*|(|x<rsub|2>|)>-\<varphi\><around*|(|\<lambda\>*x<rsub|1>+<around*|(|1-\<lambda\>|)>*x<rsub|2>|)>=\<varphi\><rprime|'><around*|(|v|)>*<around*|(|x<rsub|2>-\<lambda\>*x<rsub|1>-<around*|(|1-\<lambda\>|)>*x<rsub|2>|)>=\<varphi\><rprime|'><around*|(|v|)>*\<lambda\>*<around*|(|x<rsub|2>-x<rsub|1>|)>>>>>>
+      </equation*>
+
+      So\ 
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|>|<cell|<around*|(|\<ast\>|)>>|<cell|>>|<row|<cell|\<Leftrightarrow\><htab|5mm>\<lambda\>*\<varphi\><rprime|'><around*|(|u|)>*<around*|(|1-\<lambda\>|)>*<around*|(|x<rsub|2>-x<rsub|1>|)>>|<cell|\<leqslant\>>|<cell|\<varphi\><rprime|'><around*|(|v|)>*\<lambda\>*<around*|(|x<rsub|2>-x<rsub|1>|)>>>|<row|<cell|\<Leftrightarrow\><htab|5mm>\<varphi\><rprime|'><around*|(|u|)>>|<cell|\<leqslant\>>|<cell|\<varphi\><rprime|'><around*|(|v|)>*>>>>
+      </eqnarray*>
+
+      When <math|\<varphi\><rprime|''>> is nonnegative,
+      <math|\<varphi\><rprime|'>> is increasing therefore the above equation
+      was obtained automatically from <math|u\<less\>\<lambda\>*x<rsub|1>+<around*|(|1-\<lambda\>|)>*x<rsub|2>\<less\>v>.<htab|5mm><qed>
+    </enumerate-roman>
+  </problem>
+
+  <\problem>
+    \;
+
+    <\indent>
+      Trivial.
+
+      It's because <math|\<varphi\><rprime|''><around*|(|t|)>=b<rsup|2>*p*<around*|(|p-1|)>*<around*|(|a+b*t|)><rsup|p-2>\<geqslant\>0>,
+      so <math|\<varphi\>> is convex.
+    </indent>
+  </problem>
+
+  <\problem>
+    \;
+
+    <\indent>
+      Consider <math|\<varphi\>> to be convex or concave on any subset of
+      <math|<with|font|Bbb|R>>, it's trivial that Jensen's Inequality is
+      always an equality if and only if <math|\<varphi\><around*|(|x|)>=c*x>
+      for <math|c\<in\><with|font|Bbb|R>>.
     </indent>
   </problem>
 
@@ -1162,7 +1283,41 @@
     \;
 
     <\indent>
-      \;
+      Trivial.
+
+      It's because <math|\<varphi\><rprime|''><around*|(|x|)>=e<rsup|x>\<gtr\>0>,
+      so <math|\<varphi\><around*|(|x|)>> is convex.
+    </indent>
+  </problem>
+
+  <\problem>
+    \;
+
+    <\indent>
+      Errata: We'll prove <math|limsup<rsub|k\<rightarrow\>+\<infty\>><big|prod><rsub|n=1><rsup|k>\<zeta\><rsub|n><rsup|\<alpha\><rsub|n>>\<leqslant\><big|sum><rsub|n=1><rsup|+\<infty\>>\<alpha\><rsub|n>*\<zeta\><rsub|n>>.
+      (<math|<big|prod><rsub|n=1><rsup|\<infty\>>\<zeta\><rsub|n><rsup|\<alpha\><rsub|n>>>
+      might not exist! Take <math|\<alpha\><rsub|n>=<frac|1|2<rsup|n>>,\<zeta\><rsub|n>=2<rsup|-n>>
+      as an example)
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|<big|prod><rsub|n=1><rsup|m>\<zeta\><rsub|n><rsup|\<alpha\><rsub|n>>>|<cell|\<leqslant\>>|<cell|<big|sum><rsub|n=1><rsup|m>\<alpha\><rsub|n>*\<zeta\><rsub|n>>>|<row|<cell|\<Leftrightarrow\><htab|5mm><big|sum><rsub|n=1><rsup|m>\<alpha\><rsub|n>*ln\<zeta\><rsub|n>>|<cell|\<leqslant\>>|<cell|ln<around*|(|<big|sum><rsub|n=1><rsup|m>\<alpha\><rsub|n>*\<zeta\><rsub|n>|)>>>>>
+      </eqnarray*>
+
+      Which can be derived directly from the discrete version of Jensen's
+      inequality where <math|\<varphi\><around*|(|x|)>=ln x>. Now, take
+      <math|m\<rightarrow\>+\<infty\>>: <math|ln<around*|(|<big|sum><rsub|n=1><rsup|m>\<alpha\><rsub|n>*\<zeta\><rsub|n>|)>\<rightarrow\>ln<around*|(|<big|sum><rsub|n=1><rsup|+\<infty\>>\<alpha\><rsub|n>*\<zeta\><rsub|n>|)>,<big|sum><rsub|n=1><rsup|m>\<alpha\><rsub|n>*ln\<zeta\><rsub|n>\<rightarrow\>><math|limsup<rsub|k\<rightarrow\>+\<infty\>><big|prod><rsub|n=1><rsup|k>\<zeta\><rsub|n><rsup|\<alpha\><rsub|n>>>.<htab|5mm><qed>
+    </indent>
+  </problem>
+
+  <\problem>
+    \;
+
+    <\indent>
+      Trivial.
+
+      Take <math|\<varphi\><around*|(|x|)>=-ln<around*|(|x|)>> and use
+      Jensen's inequality, or just use the concave version of Jensen's
+      inequality.
     </indent>
   </problem>
 
@@ -1189,6 +1344,8 @@
     <associate|auto-3|<tuple|2|1>>
     <associate|auto-4|<tuple|3|4>>
     <associate|auto-5|<tuple|4|7>>
+    <associate|auto-6|<tuple|5|10>>
+    <associate|auto-7|<tuple|6|11>>
   </collection>
 </references>
 
@@ -1214,6 +1371,14 @@
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|4<space|2spc>Section
       6.4> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-5><vspace|0.5fn>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|5<space|2spc>Section
+      6.5> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-6><vspace|0.5fn>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|6<space|2spc>Section
+      6.6> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-7><vspace|0.5fn>
     </associate>
   </collection>
 </auxiliary>

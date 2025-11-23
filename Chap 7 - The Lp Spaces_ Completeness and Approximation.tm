@@ -114,13 +114,7 @@
     </indent>
   </problem>
 
-  <\problem>
-    \;
-
-    <\indent>
-      \;
-    </indent>
-  </problem>
+  <section|Section 7.2>
 
   <\problem>
     \;
@@ -133,8 +127,45 @@
   <\problem>
     \;
 
+    <\enumerate-roman>
+      <item>
+
+      <\equation*>
+        <stack|<tformat|<table|<row|<cell|<big|int><rsub|<around*|(|0,1|]>>f<rsup|p<rsub|1>>*\<mathd\>m=<big|int><rsub|<around*|(|0,1|]>>x<rsup|\<alpha\>*p<rsub|1>>*\<mathd\>m\<less\><big|int><rsub|<around*|(|0,1|]>>x<rsup|-1>*\<mathd\>m>>|<row|<cell|<big|int><rsub|<around*|(|0,1|]>>f<rsup|p<rsub|2>>*\<mathd\>m=<big|int><rsub|<around*|(|0,1|]>>x<rsup|\<alpha\>*p<rsub|2>>*\<mathd\>m\<gtr\><big|int><rsub|<around*|(|0,1|]>>x<rsup|-1>*\<mathd\>m\<rightarrow\>+\<infty\>>>>>>
+      </equation*>
+
+      <item>Errata required, otherwise <math|f\<in\>L<rsup|p><around*|(|E|)>>
+      when <math|p\<gtr\>2>.
+
+      <math|<big|int><rsub|E>f<rsup|p>*\<mathd\>m\<gtr\><big|int><rsub|1><rsup|+\<infty\>><around*|(|<frac|1|<sqrt|x><around*|(|1+ln<around*|(|x|)>|)>>|)><rsup|p>*\<mathd\>x>.
+      When <math|p\<less\>2>, there exist a sufficiently large <math|X> such
+      that
+
+      <\equation*>
+        \<forall\>x\<gtr\>X,<around*|(|<frac|1|<sqrt|x><around*|(|1+ln<around*|(|x|)>|)>>|)><rsup|p>\<gtr\><frac|1|x>
+      </equation*>
+
+      so its integral is diverge.\ 
+    </enumerate-roman>
+  </problem>
+
+  <\problem>
+    \;
+
     <\indent>
-      \;
+      In Young's Inequality, the equality holds if and only if the equality
+      in the step
+
+      <\equation*>
+        e<rsup|<frac|1|p>*ln a<rsup|p>+<frac|1|q>*ln
+        b<rsup|q>>\<leqslant\><frac|1|p>*e<rsup|ln
+        a<rsup|p>>+<frac|1|q>*e<rsup|ln b<rsup|q>>
+      </equation*>
+
+      holds. This is the discrete form of Jensen's Inequality, which holds if
+      and only if <math|ln a<rsup|p>=ln b<rsup|q>\<Leftrightarrow\>a<rsup|p>=b<rsup|q>>.
+      If we want the equality holds for all <math|p,q>, we'll obtain
+      <math|a=b=1>.<htab|5mm><qed>
     </indent>
   </problem>
 
@@ -324,8 +355,9 @@
 
 <\references>
   <\collection>
-    <associate|auto-1|<tuple|?|1|../../../.TeXmacs/texts/scratch/no_name_3.tm>>
-    <associate|auto-2|<tuple|1|1|../../../.TeXmacs/texts/scratch/no_name_3.tm>>
+    <associate|auto-1|<tuple|?|1>>
+    <associate|auto-2|<tuple|1|1>>
+    <associate|auto-3|<tuple|2|2>>
   </collection>
 </references>
 
@@ -340,6 +372,10 @@
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|1<space|2spc>Section
       7.1> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-2><vspace|0.5fn>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|2<space|2spc>Section
+      7.2> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-3><vspace|0.5fn>
     </associate>
   </collection>
 </auxiliary>

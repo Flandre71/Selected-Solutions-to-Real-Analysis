@@ -653,6 +653,233 @@
       \;
     </indent>
   </problem>
+
+  <\problem>
+    \;
+
+    <\indent>
+      \;
+    </indent>
+  </problem>
+
+  <\problem>
+    \;
+
+    <\indent>
+      \;
+    </indent>
+  </problem>
+
+  <\problem>
+    \;
+
+    <\indent>
+      \;
+    </indent>
+  </problem>
+
+  <\problem>
+    \;
+
+    <\indent>
+      \;
+    </indent>
+  </problem>
+
+  <\problem>
+    \;
+
+    <\indent>
+      \;
+    </indent>
+  </problem>
+
+  <\problem>
+    \;
+
+    <\indent>
+      No.
+
+      Let <math|E=<around*|(|0,1|]>,<around*|{|f<rsub|n><around*|(|x|)>|}><rsub|n=1><rsup|+\<infty\>>=x<rsup|-<frac|n-1|n>*<frac|1|p<rsub|2>>>,f<around*|(|x|)>=x<rsup|-p<rsub|2>>>.
+      We can see
+
+      <\equation*>
+        <around*|{|f<rsub|n>|}><rsub|n=1><rsup|\<infty\>>\<subseteq\>L<rsup|p<rsub|2>><around*|(|E|)>,lim<rsub|n\<rightarrow\>+\<infty\>>f<rsub|n><around*|(|x|)>=f<around*|(|x|)>,f\<nsubseteq\>L<rsup|p<rsub|2>><around*|(|E|)>
+      </equation*>
+    </indent>
+  </problem>
+
+  <\problem>
+    \;
+
+    <\enumerate-roman>
+      <item><math|E=<around*|{|0|}>.>
+
+      <item>We only have to prove the case where <math|E> is a non-degenerate
+      interval: Without loss of generality let <math|E=<around*|[|a,b|]>>,
+      then from the example in textbook we know
+      <math|L<rsup|\<infty\>><around*|(|E|)>> is not seperable.
+    </enumerate-roman>
+  </problem>
+
+  <\problem>
+    \;
+
+    <\indent>
+      \;
+    </indent>
+  </problem>
+
+  <\problem>
+    \;
+
+    <\indent>
+      \;
+    </indent>
+  </problem>
+
+  <\problem>
+    \;
+
+    <\indent>
+      \;
+    </indent>
+  </problem>
+
+  <\problem>
+    \;
+
+    <\indent>
+      Let <math|q> be the conjugate of <math|p>. By Cauchy's Inequality,
+
+      <\equation*>
+        2*<around*|\||a-b|\|><rsup|<frac|1|p>>\<geqslant\><around*|\||sgn<around*|(|a|)>+sgn<around*|(|b|)>|\|><rsup|<frac|1|q>>*<around*|\||a-b|\|><rsup|<frac|1|p>>\<geqslant\><around*|\||sgn<around*|(|a|)>*<around*|\||a|\|><rsup|<frac|1|p>>-sgn<around*|(|b|)>*<around*|\||b|\|><rsup|<frac|1|p>>|\|>
+      </equation*>
+    </indent>
+  </problem>
+
+  <\problem>
+    \;
+
+    <\indent>
+      Without loss of generality let <math|a\<gtr\>0>.
+
+      <\enumerate-roman>
+        <item><math|b\<gtr\>0>:
+
+        <\eqnarray*>
+          <tformat|<table|<row|<cell|p*<around*|\||a-b|\|>*<around*|(|<around*|\||a|\|>+<around*|\||b|\|>|)><rsup|p-1>>|<cell|\<geqslant\>>|<cell|<around*|\||sgn<around*|(|a|)>*<around*|\||a|\|><rsup|p>-sgn<around*|(|b|)>*<around*|\||b|\|><rsup|p>|\|>>>|<row|<cell|\<Leftrightarrow\><htab|5mm>p*<around*|\||a-b|\|>*<around*|(|a+b|)><rsup|p-1>>|<cell|\<geqslant\>>|<cell|<around*|\||a<rsup|p>-b<rsup|p>|\|>>>|<row|<cell|\<Leftrightarrow\><htab|5mm>p*<around*|(|a+b|)><rsup|p-1>>|<cell|\<geqslant\>>|<cell|a<rsup|p-1>+a<rsup|p-2>*b+\<cdots\>+b<rsup|p-1>>>>>
+        </eqnarray*>
+
+        which is trivial.
+
+        <item><math|b\<less\>0>: let <math|c=-b>,
+
+        <\eqnarray*>
+          <tformat|<table|<row|<cell|p*<around*|\||a-b|\|>*<around*|(|<around*|\||a|\|>+<around*|\||b|\|>|)><rsup|p-1>>|<cell|\<geqslant\>>|<cell|<around*|\||sgn<around*|(|a|)>*<around*|\||a|\|><rsup|p>-sgn<around*|(|b|)>*<around*|\||b|\|><rsup|p>|\|>>>|<row|<cell|\<Leftrightarrow\><htab|5mm>p*<around*|(|a+c|)>*<around*|(|a+c|)><rsup|p-1>>|<cell|\<geqslant\>>|<cell|<around*|(|a<rsup|p>+c<rsup|p>|)>>>>>
+        </eqnarray*>
+
+        which is trivial
+      </enumerate-roman>
+    </indent>
+
+    <\remark>
+      From above, I think the inequality can be optimized into
+
+      <\equation*>
+        <around*|\||a-b|\|>*<around*|(|<around*|\||a|\|>+<around*|\||b|\|>|)><rsup|p-1>\<geqslant\><around*|\||sgn<around*|(|a|)>*<around*|\||a|\|><rsup|p>-sgn<around*|(|b|)>*<around*|\||b|\|><rsup|p>|\|>
+      </equation*>
+    </remark>
+  </problem>
+
+  <\problem>
+    \;
+
+    <\enumerate-roman>
+      <item>
+
+      <\equation*>
+        <big|int><rsub|E><around*|\||\<Phi\><around*|(|f|)><around*|(|x|)>*\<mathd\>m|\|><rsup|p>=<big|int><rsub|E><around*|\||f<around*|(|x|)>|\|>*\<mathd\>m\<less\>+\<infty\>
+      </equation*>
+
+      So <math|\<Phi\><around*|(|f|)><around*|(|x|)>\<subseteq\>L<rsup|p><around*|(|E|)>>.
+
+      <item>Errata: <math|<around*|\<\|\|\>|\<Phi\><around*|(|f|)>-\<Phi\><around*|(|g|)>|\<\|\|\>><rsub|p><rsup|p>\<leqslant\>2<rsup|p>*<around*|\<\|\|\>|f-g|\<\|\|\>><rsub|1>>.
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|<around*|\<\|\|\>|\<Phi\><around*|(|f|)>-\<Phi\><around*|(|g|)>|\<\|\|\>><rsub|p><rsup|p>>|<cell|=>|<cell|<big|int><rsub|E><around*|(|sgn<around*|(|f|)>*<around*|\||f|\|><rsup|<frac|1|p>>-sgn<around*|(|g|)>*<around*|\||g|\|><rsup|<frac|1|p>>|)><rsup|p>*\<mathd\>m>>|<row|<cell|>|<cell|\<leqslant\>>|<cell|<big|int><rsub|E>2<rsup|p>*<around*|\||f-g|\|>*\<mathd\>m>>|<row|<cell|>|<cell|=>|<cell|2<rsup|p>*<around*|\<\|\|\>|f-g|\<\|\|\>><rsub|1>>>>>
+      </eqnarray*>
+
+      <htab|5mm><qed>
+
+      <item>From above we obtain <math|\<Phi\>> is a continuous mapping from
+      <math|L<rsup|1><around*|(|E|)>> into <math|L<rsup|p><around*|(|E|)>>,
+      using the completness of <math|L<rsup|1><around*|(|E|)>,L<rsup|p><around*|(|E|)>>.
+
+      <item>For <math|f,g\<in\>L<rsup|1><around*|(|E|)>>, if <math|f=g>,
+
+      <\equation*>
+        0\<leqslant\><around*|\<\|\|\>|\<Phi\><around*|(|f|)>-\<Phi\><around*|(|g|)>|\<\|\|\>><rsub|p>\<leqslant\>2<rsup|p>*<around*|\<\|\|\>|f-g|\<\|\|\>><rsub|1>=0
+      </equation*>
+
+      So <math|\<Phi\><around*|(|f|)>=\<Phi\><around*|(|g|)>>.
+
+      <item>
+
+      <\equation*>
+        \<Phi\><rsup|-1><around*|(|f|)>=sgn<around*|(|f|)>*<around*|\||f|\|><rsup|p>
+      </equation*>
+
+      <item>Refer to the steps in <em|iii)> and use <strong|Problem 74.>,
+      we're done.
+    </enumerate-roman>
+  </problem>
+
+  <\problem>
+    \;
+
+    <\indent>
+      Let <math|<around*|{|f<rsub|n>|}><rsub|n=1><rsup|+\<infty\>>\<subseteq\>L<rsup|1><around*|(|E|)>>
+      be seperable, now <math|\<forall\>\<varepsilon\>\<in\><with|font|Bbb|R><rsup|+>,\<forall\>f<rprime|'>\<in\>L<rsup|p><around*|(|E|)>,\<exists\>f<rsub|k>\<in\><around*|{|f<rsub|n>|}><rsub|n=1><rsup|+\<infty\>>,s.t.<around*|\||\<Phi\><rsup|-1><around*|(|f|)>-f<rsub|k>|\|>\<less\>\<varepsilon\>>.
+      Now by the preceding problem,
+
+      <\equation*>
+        <around*|\<\|\|\>|f-\<Phi\><around*|(|f<rsub|k>|)>|\<\|\|\>><rsub|p>\<leqslant\>2<rsup|p>*<around*|\<\|\|\>|\<Phi\><rsup|-1><around*|(|f|)>-f<rsub|k>|\<\|\|\>><rsub|1>\<less\>2<rsup|p>*\<varepsilon\>
+      </equation*>
+
+      So <math|<around*|{|\<Phi\><around*|(|f<rsub|n>|)>|}><rsub|n=1><rsup|+\<infty\>>>
+      will be the desired countable dense set in
+      <math|L<rsup|p><around*|(|E|)>>.<htab|5mm><qed>
+    </indent>
+  </problem>
+
+  <\problem>
+    \;
+
+    <\indent>
+      Since <math|L<rsup|\<infty\>><around*|(|<around*|[|a,b|]>|)>> is not
+      seperable while <math|L<rsup|1><around*|(|<around*|[|a,b|]>|)>> is
+      seperable, if there exist such continuous mapping, we can obtain a
+      contradictory since continuous mapping derives the seperability of
+      <math|L<rsup|\<infty\>><around*|(|<around*|[|a,b|]>|)>>.<htab|5mm><qed>
+    </indent>
+  </problem>
+
+  <\problem>
+    \;
+
+    <\indent>
+      <math|\<forall\>f:E\<longrightarrow\><with|font|Bbb|R>,f\<in\>L<rsup|p><around*|(|E|)>,\<forall\>\<varepsilon\>\<in\><with|font|Bbb|R><rsup|+>,\<exists\>
+      closed set F\<subseteq\>E,g\<in\>C<rsub|c><around*|(|F|)>,s.t.m<around*|(|E\\F|)>\<less\>\<varepsilon\>,f\|<rsub|F>=g\|<rsub|F>>.
+      Now from <strong|Problem 46.>
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|<around*|\||<around*|\<\|\|\>|f|\<\|\|\>><rsub|p>-<around*|\<\|\|\>|g|\<\|\|\>><rsub|p>|\|>>|<cell|=>|<cell|<around*|\||<around*|(|<big|int><rsub|E><around*|\||f|\|><rsup|p>*\<mathd\>m|)><rsup|<frac|1|p>>-<around*|(|<big|int><rsub|E><around*|\||g|\|><rsup|p>*\<mathd\>m|)><rsup|<frac|1|p>>|\|>>>|<row|<cell|>|<cell|\<leqslant\>>|<cell|2*<around*|\||<big|int><rsub|E><around*|(|<around*|\||f|\|><rsup|p>-<around*|\||g|\|><rsup|p>|)>*\<mathd\>m|\|>>>|<row|<cell|>|<cell|=>|<cell|2*<around*|\||<big|int><rsub|E\\F><around*|\||f|\|><rsup|p>*\<mathd\>m|\|>>>>>
+      </eqnarray*>
+
+      Let <math|\<varepsilon\>\<rightarrow\>0> and we're done.<htab|5mm><qed>
+    </indent>
+  </problem>
 </body>
 
 <\initial>
@@ -667,7 +894,7 @@
     <associate|auto-1|<tuple|?|1>>
     <associate|auto-2|<tuple|1|1>>
     <associate|auto-3|<tuple|2|2>>
-    <associate|auto-4|<tuple|3|?>>
+    <associate|auto-4|<tuple|3|6>>
   </collection>
 </references>
 
@@ -686,6 +913,10 @@
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|2<space|2spc>Section
       7.2> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-3><vspace|0.5fn>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|3<space|2spc>Section
+      7.3> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-4><vspace|0.5fn>
     </associate>
   </collection>
 </auxiliary>
